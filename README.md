@@ -6,8 +6,8 @@ The "DegenToken" contract is a Solidity smart contract implementing a ERC20 toke
 
 This project is a Solidity smart contract named "DegenToken" that implements a ERC20 token . It includes functions for minting new tokens ("mintTokens"), burning existing tokens ("burnUserTokens"), transferring tokens ("transferDegenTokens"), and redeeming products ("redeemProduct"). The contract also provides a function to check token balances ("getBalance") and lists available products ("listProducts") that users can redeem using their token balances. Additionally, it features ownership control, manages decimal precision.
 
-The contract is already deployed to Avalanche Fuji Testnet. The address of the contract is 0x0F1E76a4Ba31fd626Dbe9A9F135450Ded3214327.
-The Contract is verified at https://testnet.snowtrace.io/address/0x0F1E76a4Ba31fd626Dbe9A9F135450Ded3214327
+The contract is already deployed to Avalanche Fuji Testnet. The address of the contract is 0x5D77a4459C2e1a9e0734f74f20B5BdEA838D6d7B
+The Contract is verified at https://testnet.snowtrace.io/address/0x5D77a4459C2e1a9e0734f74f20B5BdEA838D6d7B
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ contract DegenToken is ERC20, Ownable {
 
     Product[] private availableProducts;
 
-    constructor() ERC20("DegenCoin", "DGC") Ownable(msg.sender) {
+    constructor() ERC20("Degen", "DGN") Ownable(msg.sender) {
         availableProducts.push(Product("Goggles", 100));
         availableProducts.push(Product("Classic Watch", 200));
         availableProducts.push(Product("Locket", 300));
