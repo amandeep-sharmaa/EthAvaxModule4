@@ -15,7 +15,7 @@ contract DegenToken is ERC20, Ownable {
 
     Product[] private availableProducts;
 
-    constructor() ERC20("DegenCoin", "DGC") Ownable(msg.sender) {
+    constructor() ERC20("Degen", "DGN") Ownable(msg.sender) {
         availableProducts.push(Product("Goggles", 100));
         availableProducts.push(Product("Classic Watch", 200));
         availableProducts.push(Product("Locket", 300));
